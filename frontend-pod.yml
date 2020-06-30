@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: frontend
+  name: frontend
+spec:
+  containers:
+  - image: pyankov/k8s-intro-front:0.0.1
+    name: frontend
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
